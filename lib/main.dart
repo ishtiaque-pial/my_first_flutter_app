@@ -18,21 +18,18 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text("My App"),
         ),
-        body: Align(
-          alignment: Alignment.bottomLeft,
-          child: SizedBox(
-            width: double.infinity,
-            height: 60,
-            child: ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                primary: Colors.green,
-                onPrimary: Colors.white,
-              ),
-              onPressed: ()=>{},
-              child: const Text("DATA"),
-            ),
-          ),
-        ),
+       bottomNavigationBar: SizedBox(
+         width: double.infinity,
+         height: 60,
+         child: ElevatedButton(
+           style: ElevatedButton.styleFrom(
+             primary: Colors.green,
+             onPrimary: Colors.white,
+           ),
+           onPressed: ()=>{},
+           child: const Text("DATA"),
+         ),
+       ),
       ),
     );
   }
